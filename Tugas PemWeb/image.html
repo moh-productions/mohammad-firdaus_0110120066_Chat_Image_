@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IMAGE PICKER</title>
+    </head>
+<body style="margin: 200px"> 	
+    <center>
+    <select onchange="gantigambar();" id="listgambar">			
+        <option value="https://www.brandcrowd.com/gallery/brands/pictures/picture15574683467192.jpg">PILIH HEWAN</option>			
+        <option value="https://www.zsl.org/sites/default/files/styles/gallery_full_width/public/media/2020-11/Tiger.jpg?itok=m9mZZDYa">HARIMAU</option>			
+        <option value="https://image-cdn.medkomtek.com/vMb-1yHtFCZF9bZ5u1vMqDawsag=/1200x675/smart/klikdokter-media-buckets/medias/2306967/original/002717200_1563245989-Makan-Daging-Unta-Saat-Ibadah-Haji-Apa-Manfaatnya-By-Alexandra-Lande-Shutterstock.jpg">UNTA</option>			
+        <option value="https://upload.wikimedia.org/wikipedia/commons/d/dc/Elephant_near_ndutu.jpg">GAJAH</option>			
+        <option value="https://upload.wikimedia.org/wikipedia/commons/0/0d/Kangaroo_and_joey03.jpg">KANGGURU</option>			
+        <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Giraffe_%28Giraffa_camelopardalis%29_females.jpg/640px-Giraffe_%28Giraffa_camelopardalis%29_females.jpg">JERAPAH</option>			
+        <option value="https://upload.wikimedia.org/wikipedia/commons/2/24/Oceanic_Whitetip_Shark.png">HIU</option>		
+    </select>	
+    </center>		
+    <br/>	
+    <img src="https://www.brandcrowd.com/gallery/brands/pictures/picture15574683467192.jpg" style="width: 100%" id="gambar"> 
+</body>
+
+<script type="text/javascript">	function gantigambar() 
+{let gambar = document.getElementById("listgambar").value;		
+document.getElementById("gambar").src = gambar;		alert("Ini Gambar " + gambar);	}
+</script>
+</html>
